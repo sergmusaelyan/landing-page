@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p{
+	font-weight: 300;
+	color: #111;
+}
+
+/* ------------------- Header ------------------------------- */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: .5s;
+}
+
+header.sticky{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,.05)
+}
+
+header .logo{
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+header.sticky .logo{
+	color: #111;
+}
+
+header .logo span{
+	color: #ff0157;
+}
+
+header .nav{
+	position: relative;
+	display: flex;
+}
+
+header .nav li{
+	list-style: none;
+	margin-left: 30px;
+}
+
+header .nav li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	transition: .5s ease;
+	padding-bottom: 5px;
+}
+
+header.sticky .nav li a{
+	color: #111;
+}
+
+header .nav li a:hover{
+	color: #ff0157;
+	border-bottom: 1px solid #ff0157;
+}
+
+
+/* ---------------------------- WE ------------------------------- */
+
+
+/* .we{
+	padding: 100px 0;
+} */
+
+.we__inner{
+	position: relative;
+	padding: 200px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #3D5789;
+	background-size: cover;
+}
+
+.we__content{
+	max-width: 900px;
+	text-align: center;
+}
+
+.we__title{
+	font-size: 60px;
+	line-height: 70px;
+	color: #fff;
+	margin-bottom: 30px;
+}	
+
+.we__subtitle{
+	font-size: 25px;
+	line-height: 30px;
+	color: #ff0157;
+	font-weight: 400;
+}
+
+.divisions{
+	padding: 100px 0;
+	background-color: #EDF3F8;
+}
+
+.divisions__inner{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.divisions__title{
+	text-align: center;
+	color: #3D5789;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+
+
+.divisions__items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.divisions__item{
+	margin: 20px 10px;
+	padding: 20px;
+	width: 420px;
+}
+
+.divisions__item-line{
+	display: inline-block;
+	width: 30%;
+	height: 7px;
+	margin-bottom: 10px;
+	background-color: #3D5789;
+}
+
+.divisions__item-title{
+	color: #3D5789;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.divisions__item-content{
+	font-size: 20px;
+	line-height: 30px;
+	margin: 10px 0 10px;
+	font-weight: 400;
+}
+
+.divisions__item-link{
+	text-decoration: none;
+	margin-top: 30px;
+	display: inline-block;
+	color: #EDF3F8;
+	padding: 10px 20px;
+	background-color: #3D5789;
+	transition: .5s ease;
+}
+
+.divisions__item-link:hover{
+	background-color: #EDF3F8;
+	color: #3D5789;
+	transform: translateY(-10px);
+}
+
+
+
+/* -------------------------- Services ------------------------------- */
+
+
+.services{
+	background-color: #3D5789;
+}
+
+.services__inner{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.services__title{
+	text-align: center;
+	color: #EDF3F8;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+
+.services__cards{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.services__card{
+	background-color: #EDF3F8;
+	padding: 20px 30px;
+	text-align: center;
+	margin: 30px 20px;
+	border-radius: 10px;
+	transition: .5s ;
+}
+
+.services__card:hover{
+	transform: translateY(-40px);
+}
+
+.services__card-title{
+	color: #3D5789;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.services__card-subtitle{
+	color: #000;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.services__card-list{
+	margin-bottom: 20px;
+}
+
+.services__card-item{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.services__card-txt{
+	color: #3D5789;
+}
+
+.services__card-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services__card:first-child .services__card-icon img{
+	height: 20px;
+	width: 20px;
+}
+
+.services__card-icon img{
+	height: 20px;
+}
+
+.services__card-info{
+	font-size: 14px;
+	color: rgb(103, 98, 98);
+}
+
+.services__card-lists{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.services__card-pure{
+	width: 30%;
+}
+
+
+/* ------------------------------ Payments -------------------------- */
+
+.payment{
+	background-color: #EDF3F8;
+}
+
+.payment__inner{
+	max-width: 1400px;
+	padding: 100px 0;
+	margin: 0 auto;
+}
+
+.payment__title{
+	font-size: 60px;
+	line-height: 70px;
+	color: #3D5789;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.payment__director{
+	font-size: 30px;
+	line-height: 40px;
+	color: #000;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.payment__director span{
+	color: #3D5789;
+}
+
+.payment__items{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.payment__item{
+	margin: 0 20px;
+	width: 47%;
+}
+
+.payment__item-title{
+	color: #3D5789;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.payment__info{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.payment__list{
+	list-style-type: none;
+}
+
+.payment__list-item{
+	margin: 5px 0;
+	font-weight: 600;
+	position: relative;
+	padding-left: 20px;
+}
+
+.payment__list-item::after{
+	content: '';
+	position: absolute;
+	background: url('./images/check.svg');
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+
+/* -------------------------- Contacts ----------------------------- */
+
+.contacts{
+	background-color: #3D5789;
+}
+
+.contacts__inner{
+	max-width: 1400px;
+	padding: 100px 20px;
+	margin: 0 auto;
+}
+
+.contacts__title{
+	font-size: 60px;
+	line-height: 70px;
+	color: #EDF3F8;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.contacts__address{
+	color: #EDF3F8;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.contacts__list{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts__list-item{
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contacts__list-txt{
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.contacts__list-link{
+	text-decoration: none;
+	color: #3D5789;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #EDF3F8;
+	border-radius: 5px;
+	transition: .4s ease;
+}
+
+.contacts__list-link:hover{
+	transform: translateY(-10px);
+	color: #EDF3F8;
+	background-color: #3D5789;
+}
+
+/* ---------------------------- Footer -------------------- */
+
+.footer{
+	background-color: #EDF3F8;
+}
+
+.footer__inner{
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 0 50px;
+}
+
+.footer__title{
+	font-size: 60px;
+	line-height: 70px;
+	color: #3D5789;
+	margin-bottom: 30px;
+}
+
+.footer__list{
+	list-style-type: none;
+}
+
+.footer__list-item{
+	transition: .5s ease-in;
+}	
+
+.footer__list-link{
+	text-decoration: none;
+	font-size: 20px;
+	margin: 10px 0;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3D5789;
+	color: #EDF3F8;
+	border-radius: 5px;
+	transition: .5s ease;
+}
+
+.footer__list-link:hover{
+	background-color: #EDF3F8;
+	color: #3D5789;
+}
+
+
+
+/* ------------------------ Media ------------------------ */
+
+
+@media screen and (max-width: 1330px){
+	.payment__items{
+		align-items: center;
+	}
+	.payment__item{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.payment__list-item{
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
+
+
+@media screen and (max-width: 991px){
+	header,
+	header.sticky{
+		padding: 10px 20px;
+	}
+	header .nav{
+		display: none;
+	}
+	header .nav.active{
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+	}
+	header .nav li{
+		margin-left: 0;
+	}
+	header .nav li a{
+		color: #111;
+		font-size: 35px;
+		margin: 15px 0;
+		display: inline-block;
+	}
+	.menuToggle{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(images/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.menuToggle.active{
+		background: url(images/close.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	header.sticky .menuToggle{
+		filter: invert(1);
+	}
+	.services__card-pure{
+		width: 45%;
+	}
+	.services__card-lists{
+		width: 45%;
+	}
+	.contacts__list{
+		flex-direction: column;
+	}
+	.contacts__list-item{
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.we__inner{
+		padding: 150px 20px;
+	}
+	.divisions__items{
+		align-items: center;
+	}
+	.divisions__item{
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.services__card-pure{
+		width: 100%;
+	}
+	.services__card-lists{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 667px){
+	.we__title{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.we__subtitle{
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.we__inner{
+		padding: 100px 20px;
+	}
+	.we__title{
+		font-size: 30px;
+		line-height: 45px;
+		margin-bottom: 20px;
+	}
+	.we__subtitle{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.divisions{
+		padding: 60px 0;
+	}
+	.divisions__title{
+		font-size: 30px;
+		line-height: 45px;
+	}
+	.divisions__item-title{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.divisions__item-content{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.divisions__item-link{
+		margin-top: 10px;
+	}
+	.services__inner{
+		padding: 60px 0;
+	}
+	.services__title{
+		font-size: 30px;
+		line-height: 45px;
+	}
+	.payment__inner{
+		padding: 60px 0;
+	}
+	.payment__title{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.payment__director{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.payment__items{
+		margin-top: 30px;
+	}
+	.payment__list-item{
+		display: block;
+		margin: 5px 0;
+	}
+	.payment__list-item:after{
+		content: none;
+	}
+	.contacts__inner{
+		padding: 60px 0;
+	}
+	.contacts__title{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.footer__inner{
+		padding: 60px 10px;
+	}
+	.footer__title{
+		font-size: 45px;
+		line-height: 60px;
+	}
+}
